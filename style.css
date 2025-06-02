@@ -1,0 +1,55 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .obrigatorio::after {
+            content: " *";
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        legend {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .form-container-visual {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .feedback-visual {
+            width: 100%;
+            margin-top: 0.25rem;
+            font-size: .875em;
+        }
+        
+        .feedback-valido-visual {
+            color: #198754;
+        }
+        
+        .feedback-invalido-visual {
+            color: #dc3545;
+        }
+        
+        .visually-hidden-focusable:focus {
+            clip: auto !important;
+            height: auto !important;
+            margin: 0 !important;
+            overflow: visible !important;
+            position: static !important;
+            width: auto !important;
+            white-space: normal !important;
+            background-color: #ffc107;
+            padding: 0.5rem;
+            border: 1px solid #000;
+            z-index: 1050;
+            text-decoration: none;
+            color: #000;
+        }
